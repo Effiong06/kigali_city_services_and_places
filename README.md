@@ -1,4 +1,5 @@
-***Kigali City Services & Places***
+****Kigali City Services & Places****
+
 **A comprehensive Flutter mobile application for discovering and navigating local services in Kigali, Rwanda. This project demonstrates real-time cloud integration, clean architectural patterns, and robust state management.**
 
 
