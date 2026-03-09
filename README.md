@@ -22,6 +22,7 @@ ______________________________________
 
 *The project follows a Clean Architecture approach to ensure the code is maintainable and testable. The lib/ directory is organized as follows:*
 
+
   core/: Global constants, app themes, and shared utility classes (including the custom LatLng fix).
   
   services/: The Data Layer. Contains FirestoreService and AuthService to handle all backend communication.
@@ -38,11 +39,11 @@ ________________________________________
 
 *The application utilizes a NoSQL document-oriented structure in Cloud Firestore.*
 
-  *Collection*: listings
+  Collection: listings
     
     Each document represents a unique city service identified by a unique ID.
     
-    *Fields*:
+    Fields:
     
       name (String): The display name of the service.
       
