@@ -42,7 +42,7 @@ class DetailsScreen extends StatelessWidget {
               width: double.infinity,
               child: FlutterMap(
                 options: MapOptions(
-                  initialCenter: LatLng(listing.lat, listing.lng), // 🟢 No 'const'
+                  initialCenter: LatLng(listing.lat, listing.lng), 
                   initialZoom: 15,
                 ),
                 children: [

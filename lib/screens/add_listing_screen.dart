@@ -33,15 +33,15 @@ class _AddListingScreenState extends State<AddListingScreen> {
     }
 
     final newListing = Listing(
-      id: '', // Firestore generates this
+      id: '', 
       userId: user.uid,
       name: _nameController.text,
       category: _selectedCategory,
       address: _addressController.text,
       phone: _phoneController.text,
       description: _descController.text,
-      lat: -1.9441, // Default Kigali Lat
-      lng: 30.0619, // Default Kigali Lng
+      lat: -1.9441, 
+      lng: 30.0619, 
       createdBy: user.uid,
     );
 

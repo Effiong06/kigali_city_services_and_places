@@ -110,7 +110,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
         return FlutterMap(
           options: MapOptions(
-            initialCenter: LatLng(-1.9441, 30.0619), // 🟢 No 'const'
+            initialCenter: LatLng(-1.9441, 30.0619), 
             initialZoom: 13,
           ),
           children: [

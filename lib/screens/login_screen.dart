@@ -12,7 +12,7 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
-  bool _isLogin = true; // Toggle between Login and Sign Up
+  bool _isLogin = true; 
 
   void _submit() async {
     final auth = Provider.of<AuthProvider>(context, listen: false);
@@ -26,7 +26,7 @@ class _LoginScreenState extends State<LoginScreen> {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text("Account created! Please verify your email.")),
         );
-        setState(() => _isLogin = true); // Switch back to login after signup
+        setState(() => _isLogin = true); 
         return;
       }
     }

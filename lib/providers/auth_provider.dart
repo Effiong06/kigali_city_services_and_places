@@ -10,7 +10,6 @@ class AuthProvider with ChangeNotifier {
 
   Stream<User?> get authStateChanges => _authService.user;
 
-  // Method to handle registration
   Future<String?> register(String email, String password) async {
     _isLoading = true;
     notifyListeners();

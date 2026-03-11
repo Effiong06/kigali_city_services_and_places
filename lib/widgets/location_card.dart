@@ -16,7 +16,6 @@ class LocationCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Requirement 2: Check if the current user is the creator
     final bool isOwner = item.userId == FirebaseAuth.instance.currentUser?.uid;
 
     return Card(
@@ -26,7 +25,7 @@ class LocationCard extends StatelessWidget {
       child: ListTile(
         onTap: onTap,
         leading: CircleAvatar(
-          backgroundColor: const Color(0xFF00A86B), // Kigali Green
+          backgroundColor: const Color(0xFF00A86B),
           child: const Icon(Icons.location_city, color: Colors.white, size: 20),
         ),
         title: Text(item.name, style: const TextStyle(fontWeight: FontWeight.bold)),

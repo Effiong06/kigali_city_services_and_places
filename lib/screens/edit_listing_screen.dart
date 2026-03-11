@@ -23,7 +23,6 @@ class _EditListingScreenState extends State<EditListingScreen> {
   @override
   void initState() {
     super.initState();
-    // Pre-fill the controllers with existing data
     _nameController = TextEditingController(text: widget.listing.name);
     _descController = TextEditingController(text: widget.listing.description);
     _addressController = TextEditingController(text: widget.listing.address);
@@ -43,10 +42,9 @@ class _EditListingScreenState extends State<EditListingScreen> {
         phone: _phoneController.text,
         lat: widget.listing.lat, 
         lng: widget.listing.lng,
-        createdBy: widget.listing.createdBy, // 🟢 Add this line to satisfy the model
+        createdBy: widget.listing.createdBy, 
       );
 
-      // 🟢 Pass both the ID and the listing object to the service
       await FirestoreService().updateListing(widget.listing.id, updatedListing);
       
       if (mounted) {

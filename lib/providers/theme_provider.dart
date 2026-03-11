@@ -5,7 +5,6 @@ class ThemeProvider with ChangeNotifier {
 
   bool get isDarkMode => _isDarkMode;
 
-  // Primary color for Kigali Branding
   static const Color kigaliGreen = Color(0xFF00A86B);
 
   ThemeData get currentTheme {
@@ -14,7 +13,7 @@ class ThemeProvider with ChangeNotifier {
 
   void toggleTheme() {
     _isDarkMode = !_isDarkMode;
-    notifyListeners(); // This tells the app to rebuild
+    notifyListeners(); 
   }
 
   static final ThemeData _lightTheme = ThemeData(
