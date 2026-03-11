@@ -192,7 +192,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     final pages = [
       _buildBrowsePage(),
-      const MyListingsScreen(), // ⭐ NEW
+      const MyListingsScreen(), 
       _buildMapPage(),
       _buildProfilePage(),
     ];
