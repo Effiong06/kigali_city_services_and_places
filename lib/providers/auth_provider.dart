@@ -21,7 +21,6 @@ class AuthProvider with ChangeNotifier {
     return result;
   }
 
-  // Method to handle login
   Future<String?> login(String email, String password) async {
     _isLoading = true;
     notifyListeners();
