@@ -20,18 +20,18 @@ ________________________________________________________________________________
 **Architectural Structure**
 ______________________________________
 
-*The project follows a Clean Architecture approach to ensure the code is maintainable and testable. The lib/ directory is organized as follows:*
+*The project follows a Clean Architecture approach to ensure the code is maintainable and testable. The lib/ directory is organized into five primary layers:*
 
 
-  core/: Global constants, app themes, and shared utility classes (including the custom LatLng fix).
-  
-  services/: The Data Layer. Contains FirestoreService and AuthService to handle all backend communication.
-  
-  models/: Data entities (e.g., ServiceListing) that define how Kigali services are structured in the app.
-  
-  providers/: The State Management Layer. Logic for managing app state and notifying the UI of data changes.
-  
-  screens/: The Presentation Layer. Flutter widgets and UI components for Home, Details, and Auth views.
+ models/: The Data Layer. Defines data entities (e.g., ServiceListing) that structure how Kigali services are represented in the app.
+ 
+ services/: The Infrastructure Layer. Contains FirestoreService and AuthService to handle all backend communication and API calls.
+ 
+ providers/: The State Management Layer. Contains the logic for managing app state and notifying the UI of data changes (using Provider/Riverpod).
+ 
+ screens/: The Presentation Layer (Pages). High-level Flutter widgets that represent entire views, such as Home, Details, and Auth screens.
+ 
+ widgets/: The Presentation Layer (Components). Reusable UI components and smaller building blocks used across multiple screens to keep the code DRY.
 _______________________________________________________________________________________________________________
 
 **Firestore Database Structure**
